@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <rect width="300" height="300" fill="#FFFFFF"/>
+  <rect x="110" y="90" width="80" height="120" rx="5" fill="#212121" stroke="#000000" stroke-width="3"/>
+  <rect x="120" y="100" width="60" height="100" fill="#FF6B35" opacity="0.3"/>
+  <rect x="185" y="120" width="8" height="20" rx="2" fill="#424242"/>
+  <text x="150" y="250" font-family="Arial" font-size="12" fill="#003D82" text-anchor="middle" font-weight="600">12V Battery</text>
+</svg>

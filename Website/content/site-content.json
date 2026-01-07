@@ -1,0 +1,291 @@
+{
+  "general": {
+    "tagline": "Powered by Life",
+    "missionShort": "Supplying reliable auto parts and expert service to keep Kenya moving."
+  },
+  "homepage": {
+    "hero": {
+      "title": "Trusted Auto Parts & Vehicle Services in Kenya",
+      "subtitle": "hashimi Auto Solutions supplies genuine parts, premium tyres and professional vehicle services for private drivers, mechanics and fleet owners.",
+      "primaryCtaText": "Book a Service",
+      "secondaryCtaText": "Browse Products",
+      "image": "assets/images/hero-default.svg",
+      "highlights": [
+        "Genuine & OEM-quality parts",
+        "Tyres, batteries, filters & more",
+        "Diagnostics & maintenance",
+        "Fast service, fair pricing"
+      ]
+    },
+    "whyChooseUs": [
+      {
+        "icon": "🔧",
+        "title": "Experienced Technicians",
+        "text": "Our team combines hands-on workshop experience with up-to-date diagnostic tools to service modern vehicles safely."
+      },
+      {
+        "icon": "✅",
+        "title": "Genuine & Warranty-backed Parts",
+        "text": "We stock quality, trusted brands with clear warranties so you know what goes into your vehicle."
+      },
+      {
+        "icon": "⏱",
+        "title": "Fast Turnaround",
+        "text": "From tyre fitting to minor repairs, we focus on same-day service where possible so you get back on the road quickly."
+      },
+      {
+        "icon": "🇰🇪",
+        "title": "Kenya-focused Solutions",
+        "text": "We understand local road conditions and tailor our recommendations to Kenyan driving realities and budgets."
+      }
+    ],
+    "visitCtaText": "Find us along a convenient, accessible route with secure parking and a friendly reception team ready to assist."
+  },
+  "services": [
+    {
+      "id": "tyres",
+      "name": "Tyre Sales & Installation",
+      "shortTagline": "Tyres for passenger cars, SUVs and light commercial vehicles.",
+      "description": "We stock a wide range of tyres from trusted local and international brands, suitable for Kenyan roads and climates. Our team will help you choose the right size, load rating and tread pattern, then mount, balance and install your tyres using professional equipment.",
+      "detailedPoints": [
+        "New tyres for saloon cars, SUVs, vans and light trucks",
+        "Wheel balancing and alignment (where available)",
+        "Valve replacement and puncture repair",
+        "Advice on tyre rotation and lifespan"
+      ],
+      "estimatedTime": "Typical fitment: 45–60 minutes",
+      "image": "assets/images/service-tyres.svg",
+      "featured": true
+    },
+    {
+      "id": "parts",
+      "name": "Auto Parts Supply",
+      "shortTagline": "Reliable parts for Japanese, European and local vehicles.",
+      "description": "From filters and brake pads to suspension and electrical components, we source and supply quality parts for popular vehicle models in Kenya. We work directly with trusted distributors to ensure consistency and availability.",
+      "detailedPoints": [
+        "Engine oil & air filters, fuel filters, cabin filters",
+        "Brake pads, discs, shoes and drums",
+        "Suspension parts, steering components and bushings",
+        "Belts, spark plugs, batteries and electrical components"
+      ],
+      "estimatedTime": "Counter service: usually under 20 minutes",
+      "image": "assets/images/service-parts.svg",
+      "featured": true
+    },
+    {
+      "id": "maintenance",
+      "name": "Vehicle Maintenance & Repairs",
+      "shortTagline": "Preventive maintenance and minor mechanical repairs.",
+      "description": "Keep your vehicle in top condition with scheduled servicing, fluid changes and essential repairs. We focus on transparency, explaining what needs attention now and what can be planned for a later visit.",
+      "detailedPoints": [
+        "Minor/major service packages with quality oils and filters",
+        "Brake system checks and repairs",
+        "Cooling system inspections, radiators and hoses",
+        "Basic engine diagnostics and fault code checks"
+      ],
+      "estimatedTime": "Service bookings: 1.5–3 hours",
+      "image": "assets/images/service-maintenance.svg",
+      "featured": true
+    },
+    {
+      "id": "accessories",
+      "name": "Accessories & Add-ons",
+      "shortTagline": "Upgrade comfort, safety and style.",
+      "description": "Add practical and aesthetic upgrades to your vehicle, from floor mats and seat covers to lighting and in-car tech. We help you choose accessories that fit your vehicle and daily usage.",
+      "detailedPoints": [
+        "Seat covers, floor mats and boot liners",
+        "Wiper blades, lighting upgrades and bulbs",
+        "Phone holders, chargers and in-car tech",
+        "Cosmetic trims and detailing accessories"
+      ],
+      "estimatedTime": "Installation: 30–90 minutes depending on items",
+      "image": "assets/images/service-accessories.svg",
+      "featured": false
+    },
+    {
+      "id": "emergency",
+      "name": "Emergency Roadside Assistance (On Request)",
+      "shortTagline": "Support when you are stranded nearby.",
+      "description": "Subject to availability, we provide basic roadside assistance within our area for issues such as flat tyres or simple battery problems. Speak to our team in advance to understand coverage and response times.",
+      "detailedPoints": [
+        "Local area tyre change support",
+        "Jump-start assistance for weak batteries",
+        "Guidance on safe towing and recovery options",
+        "Phone support to help you assess the situation"
+      ],
+      "estimatedTime": "Response times vary by traffic and workload",
+      "image": "assets/images/service-emergency.svg",
+      "featured": false
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "name": "All-season Tyre 195/65 R15",
+      "category": "Tyres",
+      "description": "Durable all-season tyre suitable for popular saloon cars, optimised for mixed highway and urban driving in Kenyan conditions.",
+      "price": 7800,
+      "image": "assets/images/product-tyre-1.svg"
+    },
+    {
+      "id": "p2",
+      "name": "Premium SUV Tyre 225/65 R17",
+      "category": "Tyres",
+      "description": "High-traction SUV tyre designed for highway comfort and occasional rough road usage.",
+      "price": 14800,
+      "image": "assets/images/product-tyre-2.svg"
+    },
+    {
+      "id": "p3",
+      "name": "Maintenance Service Kit (1.5–2.0L Petrol)",
+      "category": "Service Kits",
+      "description": "Service kit including engine oil, oil filter, air filter and basic consumables for common Japanese saloon cars.",
+      "price": 9500,
+      "image": "assets/images/product-service-kit.svg"
+    },
+    {
+      "id": "p4",
+      "name": "Standard Brake Pad Set (Front)",
+      "category": "Brakes",
+      "description": "Quality aftermarket brake pads for popular sedans, offering consistent braking performance and low noise.",
+      "price": 5200,
+      "image": "assets/images/product-brakepads.svg"
+    },
+    {
+      "id": "p5",
+      "name": "Heavy Duty Car Battery 12V 65Ah",
+      "category": "Batteries",
+      "description": "Reliable battery for modern vehicles with standard electrical loads, backed by manufacturer warranty.",
+      "price": 13500,
+      "image": "assets/images/product-battery.svg"
+    },
+    {
+      "id": "p6",
+      "name": "Windshield Wiper Blade Pair",
+      "category": "Accessories",
+      "description": "All-weather wiper blades providing clear visibility in rain and dust.",
+      "price": 1600,
+      "image": "assets/images/product-wipers.svg"
+    },
+    {
+      "id": "p7",
+      "name": "Rubber Floor Mat Set (Universal)",
+      "category": "Accessories",
+      "description": "Easy-to-clean all-weather mats to protect your interior from mud and dust.",
+      "price": 2800,
+      "image": "assets/images/product-mats.svg"
+    },
+    {
+      "id": "p8",
+      "name": "Engine Air Filter (Japanese Saloon)",
+      "category": "Filters",
+      "description": "High-efficiency air filter helping your engine breathe clean air and maintain fuel economy.",
+      "price": 1800,
+      "image": "assets/images/product-airfilter.svg"
+    },
+    {
+      "id": "p9",
+      "name": "Oil Filter (Spin-on Type)",
+      "category": "Filters",
+      "description": "High-quality oil filter compatible with a wide range of petrol engines.",
+      "price": 750,
+      "image": "assets/images/product-oilfilter.svg"
+    },
+    {
+      "id": "p10",
+      "name": "LED Headlight Bulb Kit",
+      "category": "Lighting",
+      "description": "Energy-efficient LED headlight bulbs that improve night visibility while consuming less power.",
+      "price": 4200,
+      "image": "assets/images/product-ledlights.svg"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Kevin M.",
+      "location": "Nairobi",
+      "quote": "I get my tyres and service kits from hashimi Auto Solutions. Pricing is fair and the team gives honest advice.",
+      "photo": "assets/images/testimonial-1.svg"
+    },
+    {
+      "name": "Mary W.",
+      "location": "Mombasa",
+      "quote": "They helped me source the correct brake parts for my car and arranged fitting the same day. Very professional.",
+      "photo": "assets/images/testimonial-2.svg"
+    },
+    {
+      "name": "Jambo Auto Garage",
+      "location": "Kiambu",
+      "quote": "As a busy garage we need reliable parts suppliers. hashimi Auto Solutions has been consistent and responsive for our workshop needs.",
+      "photo": "assets/images/testimonial-3.svg"
+    }
+  ],
+  "team": [
+    {
+      "name": "Hashim Ali",
+      "role": "Founder & Director",
+      "bio": "With more than a decade in the automotive industry, Hashim leads the team with a focus on reliability, transparency and long-term customer relationships.",
+      "photo": "assets/images/team-1.svg"
+    },
+    {
+      "name": "Jane Njeri",
+      "role": "Service Advisor",
+      "bio": "Jane coordinates bookings, keeps customers informed on progress and explains recommended work in clear, simple language.",
+      "photo": "assets/images/team-2.svg"
+    },
+    {
+      "name": "Peter Otieno",
+      "role": "Lead Technician",
+      "bio": "Peter specialises in diagnostics and troubleshooting for modern petrol vehicles, combining experience with up-to-date tools.",
+      "photo": "assets/images/team-3.svg"
+    }
+  ],
+  "about": {
+    "history": "hashimi Auto Solutions was founded to give Kenyan motorists a trustworthy one-stop shop for quality auto parts and practical vehicle services. We understand how important your car is to your daily life and business, so we focus on solutions that are reliable, affordable and tailored to our roads.",
+    "mission": "Our mission is to keep our customers safely on the road by combining genuine parts, skilled technicians and clear, honest communication. Whether you are a private driver, mechanic, fleet owner or small garage, we aim to be your preferred automotive partner.",
+    "yearsInBusiness": 5,
+    "values": [
+      {
+        "title": "Integrity",
+        "text": "We recommend only what your vehicle genuinely needs and are transparent with pricing and options."
+      },
+      {
+        "title": "Quality",
+        "text": "We carefully select parts and suppliers to ensure long-term performance in Kenyan conditions."
+      },
+      {
+        "title": "Customer Care",
+        "text": "We treat every customer with respect, explaining technical issues in simple terms and offering practical choices."
+      }
+    ]
+  },
+  "contactInfo": {
+    "phonePrimary": "0743999766 / 0102866616",
+    "email": "sales.hashimiautosolutions@gmail.com",
+    "addressLine1": "Kirinyanga Road, Kingdom Bank Building, Second Floor",
+    "city": "Nairobi, Kenya",
+    "quickHours": "Mon–Fri: 8:00am – 5:30pm, Sat: 8:00am – 3:00pm",
+    "whatsappNumber": "254743999766",
+    "googleMapsEmbedUrl": "https://www.google.com/maps?q=Kingdom+Bank+Kirinyanga+Road+Nairobi+Kenya&output=embed",
+    "socialLinks": [
+      {
+        "label": "Facebook",
+        "url": "https://facebook.com/hashimiautosolutions"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://instagram.com/hashimiautosolutions"
+      },
+      {
+        "label": "WhatsApp",
+        "url": "https://wa.me/254743999766"
+      }
+    ]
+  },
+  "businessHours": [
+    { "label": "Monday – Friday", "value": "8:00am – 5:30pm" },
+    { "label": "Saturday", "value": "8:00am – 3:00pm" },
+    { "label": "Sunday & Public Holidays", "value": "Closed (emergency support by arrangement)" }
+  ]
+}
+

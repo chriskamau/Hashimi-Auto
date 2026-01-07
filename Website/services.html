@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | hashimi Auto Solutions</title>
+    <meta
+      name="description"
+      content="Explore vehicle services from hashimi Auto Solutions including tyre sales, auto parts supply, maintenance, accessories and emergency support."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  </head>
+  <body data-theme="light">
+    <header class="site-header">
+      <div class="top-bar">
+        <span id="top-contact-phone"></span>
+        <span id="top-contact-hours"></span>
+      </div>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/images/hashimi-logo.png" alt="hashimi logo" />
+          <div class="logo-text">
+            <span class="brand-name">Hashimi Auto Solutions</span>
+            <span class="brand-tagline">Powered by Life</span>
+          </div>
+        </a>
+        <nav class="main-nav" id="main-nav">
+          <a href="index.html">Home</a>
+          <a href="services.html" class="active">Services</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="btn-secondary small">Dark Mode</button>
+          <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h1>Vehicle Services</h1>
+        <p>
+          From tyres and parts to routine maintenance, hashimi Auto Solutions offers a focused range of services to keep
+          your vehicle safe and reliable on Kenyan roads.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="cards-grid" id="services-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div>
+          <h4>hashimi Auto Solutions</h4>
+          <p id="footer-tagline"></p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p id="footer-address"></p>
+          <p id="footer-phone"></p>
+          <p id="footer-email"></p>
+        </div>
+        <div>
+          <h4>Business Hours</h4>
+          <ul id="footer-hours"></ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="social-links" id="footer-social-links"></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span id="footer-copy"></span>
+        <a href="admin.html" class="admin-link">Admin</a>
+      </div>
+    </footer>
+
+    <a
+      href="#"
+      id="whatsapp-button"
+      class="whatsapp-button"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+    >
+      WhatsApp
+    </a>
+
+    <script src="assets/js/content-loader.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", async function () {
+        await window.HashimiSite.loadServicesPageContent();
+        // Wire up modal details for services
+        const grid = document.getElementById("services-grid");
+        grid.addEventListener("click", function (e) {
+          const btn = e.target.closest("button[data-service-id]");
+          if (!btn) return;
+          const id = btn.getAttribute("data-service-id");
+          const content = window.HashimiSite.state.content;
+          if (!content || !Array.isArray(content.services)) return;
+          const svc = content.services.find((s) => s.id === id);
+          if (!svc) return;
+          const points = Array.isArray(svc.detailedPoints)
+            ? "<ul>" + svc.detailedPoints.map((p) => `<li>${p}</li>`).join("") + "</ul>"
+            : "";
+          window.HashimiSite.openModal(
+            svc.name,
+            `<p>${svc.description || ""}</p>${points}<p><strong>Typical duration:</strong> ${
+              svc.estimatedTime || ""
+            }</p>`
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
+

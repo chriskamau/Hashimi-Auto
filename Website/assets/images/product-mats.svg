@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <rect width="300" height="300" fill="#FFFFFF"/>
+  <rect x="70" y="100" width="160" height="100" rx="8" fill="#424242"/>
+  <rect x="80" y="110" width="140" height="80" fill="#616161"/>
+  <text x="150" y="250" font-family="Arial" font-size="12" fill="#003D82" text-anchor="middle" font-weight="600">Floor Mats</text>
+</svg>

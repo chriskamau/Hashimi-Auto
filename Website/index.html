@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hashimi Auto Solutions | Quality Auto Parts & Vehicle Services in Kenya</title>
+    <meta
+      name="description"
+      content="hashimi Auto Solutions supplies quality auto parts, tyres, accessories and professional vehicle services for customers across Kenya. Powered by Life."
+    />
+    <meta name="keywords" content="hashimi Auto Solutions, auto parts Kenya, tyres, vehicle service, car accessories" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="alternate icon" href="assets/images/favicon.png" />
+  </head>
+  <body data-theme="light">
+    <header class="site-header">
+      <div class="top-bar">
+        <span id="top-contact-phone"></span>
+        <span id="top-contact-hours"></span>
+      </div>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/images/hashimi-logo.png" alt="hashimi logo" />
+          <div class="logo-text">
+            <span class="brand-name">Hashimi Auto Solutions</span>
+            <span class="brand-tagline">Powered by Life</span>
+          </div>
+        </a>
+        <nav class="main-nav" id="main-nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="services.html">Services</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="btn-secondary small">Dark Mode</button>
+          <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="hero-section">
+        <div class="hero-content">
+          <h1 id="hero-title"></h1>
+          <p id="hero-subtitle"></p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn-primary" id="hero-primary-cta"></a>
+            <a href="products.html" class="btn-outline" id="hero-secondary-cta"></a>
+          </div>
+          <ul class="hero-highlights" id="hero-highlights"></ul>
+        </div>
+        <div class="hero-image-wrapper">
+          <img id="hero-image" src="assets/images/hero-default.jpg" alt="hashimi Auto Solutions workshop" />
+        </div>
+      </section>
+
+      <!-- Featured Services Slider -->
+      <section class="section" id="featured-services">
+        <div class="section-header">
+          <h2>Featured Services</h2>
+          <p>Quality parts and professional workmanship for every vehicle.</p>
+        </div>
+        <div class="slider">
+          <button class="slider-nav prev" id="service-prev" aria-label="Previous service">&#10094;</button>
+          <div class="slider-track" id="services-slider-track"></div>
+          <button class="slider-nav next" id="service-next" aria-label="Next service">&#10095;</button>
+        </div>
+        <div class="slider-dots" id="services-slider-dots"></div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section class="section alt" id="why-choose-us">
+        <div class="section-header">
+          <h2>Why Choose hashimi Auto Solutions</h2>
+          <p>Trusted by drivers, mechanics and fleet owners across Kenya.</p>
+        </div>
+        <div class="feature-grid" id="why-choose-grid"></div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section" id="testimonials-section">
+        <div class="section-header">
+          <h2>What Our Customers Say</h2>
+        </div>
+        <div class="testimonials-grid" id="testimonials-grid"></div>
+      </section>
+
+      <!-- Call to Action Blocks -->
+      <section class="section alt cta-strip">
+        <div class="cta-card">
+          <h3>Visit Our Shop</h3>
+          <p id="cta-visit-text"></p>
+          <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="btn-outline"
+            >Open in Google Maps</a
+          >
+        </div>
+        <div class="cta-card">
+          <h3>Book a Service</h3>
+          <p>Schedule tyre fitting, diagnostics or routine maintenance at a time that works for you.</p>
+          <a href="contact.html#booking" class="btn-primary">Request Appointment</a>
+        </div>
+        <div class="cta-card">
+          <h3>Shop Parts & Accessories</h3>
+          <p>Browse our curated range of quality parts and accessories for popular vehicles in Kenya.</p>
+          <a href="products.html" class="btn-outline">Browse Products</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div>
+          <h4>hashimi Auto Solutions</h4>
+          <p id="footer-tagline"></p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p id="footer-address"></p>
+          <p id="footer-phone"></p>
+          <p id="footer-email"></p>
+        </div>
+        <div>
+          <h4>Business Hours</h4>
+          <ul id="footer-hours"></ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="social-links" id="footer-social-links"></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span id="footer-copy"></span>
+        <a href="admin.html" class="admin-link">Admin</a>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="#"
+      id="whatsapp-button"
+      class="whatsapp-button"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+    >
+      WhatsApp
+    </a>
+
+    <script src="assets/js/content-loader.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        window.HashimiSite.loadHomePageContent();
+      });
+    </script>
+  </body>
+</html>
+

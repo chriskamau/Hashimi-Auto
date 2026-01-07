@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="200" height="80">
+  <!-- Placeholder logo matching Hashimi design -->
+  <rect width="200" height="80" fill="#FFFFFF"/>
+  
+  <!-- Abstract Icon -->
+  <path d="M 10 20 Q 15 10, 20 15 Q 25 20, 20 30 Q 15 40, 20 50 Q 25 55, 30 50 Q 35 45, 30 35 Q 25 25, 30 20 Q 35 15, 40 20" 
+        fill="#003D82" stroke="none"/>
+  <path d="M 40 20 Q 45 15, 50 20 Q 55 25, 50 35 Q 45 45, 50 50 Q 55 55, 60 50 Q 65 45, 60 35 Q 55 25, 60 20 Q 65 15, 70 20" 
+        fill="#FF6B35" stroke="none"/>
+  
+  <text x="10" y="70" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#003D82">hashimi</text>
+  <text x="10" y="78" font-family="Arial, sans-serif" font-size="10" font-weight="400" fill="#003D82" opacity="0.9">Powered by Life</text>
+</svg>

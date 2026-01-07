@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Accessories Placeholder -->
+  <rect width="400" height="300" fill="#F5F5F5"/>
+  
+  <!-- Accessories illustration -->
+  <!-- Floor mats -->
+  <rect x="120" y="100" width="160" height="100" rx="5" fill="#424242" opacity="0.7"/>
+  <rect x="130" y="110" width="140" height="80" fill="#616161"/>
+  
+  <!-- Wiper blades -->
+  <rect x="140" y="220" width="120" height="8" rx="4" fill="#757575"/>
+  <rect x="145" y="215" width="110" height="3" fill="#FF6B35"/>
+  
+  <!-- Text -->
+  <text x="200" y="270" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#003D82" text-anchor="middle">Accessories & Add-ons</text>
+</svg>

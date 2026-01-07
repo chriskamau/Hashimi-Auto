@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | hashimi Auto Solutions Site Content</title>
+    <meta
+      name="description"
+      content="Beginner-friendly admin area to edit services, products, testimonials, team members and contact details for the hashimi Auto Solutions website."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  </head>
+  <body data-theme="light">
+    <header class="site-header">
+      <div class="top-bar">
+        <span id="top-contact-phone"></span>
+        <span id="top-contact-hours"></span>
+      </div>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/images/hashimi-logo.png" alt="hashimi logo" />
+          <div class="logo-text">
+            <span class="brand-name">Hashimi Auto Solutions</span>
+            <span class="brand-tagline">Powered by Life</span>
+          </div>
+        </a>
+        <nav class="main-nav" id="main-nav">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="btn-secondary small">Dark Mode</button>
+          <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h1>Admin Content Editor</h1>
+        <p>
+          Edit website text and lists in a single JSON file. After changes, download the updated file and replace
+          <code>content/site-content.json</code> on your server.
+        </p>
+      </section>
+
+      <section class="admin-layout">
+        <aside class="admin-sidebar">
+          <div>
+            <h2>Content Sections</h2>
+            <p class="admin-hint">Select a section to edit, then save to JSON.</p>
+          </div>
+          <nav class="admin-nav" id="admin-nav">
+            <button data-section="homepage" class="active">Homepage</button>
+            <button data-section="services">Services</button>
+            <button data-section="products">Products</button>
+            <button data-section="testimonials">Testimonials</button>
+            <button data-section="team">Team</button>
+            <button data-section="about">About</button>
+            <button data-section="contactInfo">Contact & Hours</button>
+            <button data-section="raw">Raw JSON</button>
+          </nav>
+        </aside>
+
+        <section class="admin-main">
+          <div class="admin-actions">
+            <button id="admin-load" class="btn-secondary small">Reload from file</button>
+            <button id="admin-download" class="btn-primary small">Download updated JSON</button>
+            <span class="badge" id="admin-status">Idle</span>
+          </div>
+          <p class="admin-hint">
+            Note: This admin tool runs entirely in your browser. It does not save directly to the server. After editing,
+            click “Download updated JSON” and replace the existing
+            <code>content/site-content.json</code> file on your hosting.
+          </p>
+
+          <div id="admin-section-homepage" class="admin-section active">
+            <h2>Homepage</h2>
+            <p class="admin-hint">Update the main hero text and “Why choose us” points.</p>
+            <div class="form-group">
+              <label for="admin-hero-title">Hero title</label>
+              <input type="text" id="admin-hero-title" />
+            </div>
+            <div class="form-group">
+              <label for="admin-hero-subtitle">Hero subtitle</label>
+              <textarea id="admin-hero-subtitle"></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="admin-hero-primary">Primary button text</label>
+                <input type="text" id="admin-hero-primary" />
+              </div>
+              <div class="form-group">
+                <label for="admin-hero-secondary">Secondary button text</label>
+                <input type="text" id="admin-hero-secondary" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="admin-hero-highlights">Highlights (one per line)</label>
+              <textarea id="admin-hero-highlights"></textarea>
+            </div>
+          </div>
+
+          <div id="admin-section-services" class="admin-section">
+            <h2>Services</h2>
+            <p class="admin-hint">
+              Edit the services list as JSON. Keep an eye on commas and quotes. Each service should have an
+              <code>id</code>, <code>name</code>, <code>description</code> and optionally
+              <code>detailedPoints</code>.
+            </p>
+            <textarea id="admin-services-json" class="json-editor"></textarea>
+          </div>
+
+          <div id="admin-section-products" class="admin-section">
+            <h2>Products</h2>
+            <p class="admin-hint">
+              Edit the product catalog as JSON. Each product should include <code>id</code>, <code>name</code>,
+              <code>category</code>, <code>description</code> and <code>price</code>.
+            </p>
+            <textarea id="admin-products-json" class="json-editor"></textarea>
+          </div>
+
+          <div id="admin-section-testimonials" class="admin-section">
+            <h2>Testimonials</h2>
+            <p class="admin-hint">Edit customer testimonials as JSON array entries.</p>
+            <textarea id="admin-testimonials-json" class="json-editor"></textarea>
+          </div>
+
+          <div id="admin-section-team" class="admin-section">
+            <h2>Team Members</h2>
+            <p class="admin-hint">Edit team members as JSON array entries.</p>
+            <textarea id="admin-team-json" class="json-editor"></textarea>
+          </div>
+
+          <div id="admin-section-about" class="admin-section">
+            <h2>About</h2>
+            <p class="admin-hint">Edit company history, mission and values.</p>
+            <textarea id="admin-about-json" class="json-editor"></textarea>
+          </div>
+
+          <div id="admin-section-contactInfo" class="admin-section">
+            <h2>Contact & Business Hours</h2>
+            <p class="admin-hint">
+              Edit contact details and business hours. This section affects the footer and contact page.
+            </p>
+            <textarea id="admin-contact-json" class="json-editor"></textarea>
+          </div>
+
+          <div id="admin-section-raw" class="admin-section">
+            <h2>Raw JSON Editor</h2>
+            <p class="admin-hint">
+              Advanced: edit the entire <code>site-content.json</code> file here. Only use this if you are comfortable
+              with JSON.
+            </p>
+            <textarea id="admin-raw-json" class="json-editor"></textarea>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div>
+          <h4>hashimi Auto Solutions</h4>
+          <p id="footer-tagline"></p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p id="footer-address"></p>
+          <p id="footer-phone"></p>
+          <p id="footer-email"></p>
+        </div>
+        <div>
+          <h4>Business Hours</h4>
+          <ul id="footer-hours"></ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="social-links" id="footer-social-links"></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span id="footer-copy"></span>
+      </div>
+    </footer>
+
+    <a
+      href="#"
+      id="whatsapp-button"
+      class="whatsapp-button"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+    >
+      WhatsApp
+    </a>
+
+    <script src="assets/js/content-loader.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/admin.js"></script>
+  </body>
+</html>
+

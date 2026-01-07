@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100">
+  <!-- White background -->
+  <rect width="200" height="100" fill="#FFFFFF"/>
+  
+  <!-- Abstract Icon: Two Intertwined Shapes -->
+  <!-- Blue shape (left, stylized H/flowing element) -->
+  <path d="M 20 15 Q 25 8, 30 12 Q 35 18, 32 25 Q 28 32, 30 40 Q 32 48, 38 45 Q 44 42, 42 35 Q 40 28, 45 25 Q 50 22, 48 15 Q 46 8, 50 12" 
+        fill="#003D82" stroke="none"/>
+  
+  <!-- Orange shape (right, complementary flowing element) - overlapping/intertwined -->
+  <path d="M 50 12 Q 54 8, 60 15 Q 66 22, 64 30 Q 62 38, 68 42 Q 74 46, 72 52 Q 70 58, 65 55 Q 60 52, 62 45 Q 64 38, 58 35 Q 52 32, 54 25 Q 56 18, 50 12" 
+        fill="#FF6B35" stroke="none"/>
+  
+  <!-- Additional overlap details for intertwining effect -->
+  <path d="M 48 20 Q 50 18, 52 20 Q 50 22, 48 20" fill="#003D82" opacity="0.9"/>
+  <path d="M 52 20 Q 54 18, 56 20 Q 54 22, 52 20" fill="#FF6B35" opacity="0.9"/>
+  
+  <!-- Brand Name: hashimi (lowercase, bold, dark blue) -->
+  <text x="100" y="70" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#003D82" text-anchor="middle" text-transform="lowercase">hashimi</text>
+  
+  <!-- Tagline: Powered by Life (lighter gray/silver, smaller) -->
+  <text x="100" y="88" font-family="Arial, sans-serif" font-size="12" font-weight="400" fill="#808080" text-anchor="middle">Powered by Life</text>
+</svg>

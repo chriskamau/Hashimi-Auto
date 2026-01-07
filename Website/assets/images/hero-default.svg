@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- Hero Image Placeholder: Auto Workshop/Service Bay -->
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E3F2FD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BBDEFB;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="floor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E0E0E0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BDBDBD;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky/Background -->
+  <rect width="800" height="300" fill="url(#sky)"/>
+  
+  <!-- Floor -->
+  <rect y="300" width="800" height="200" fill="url(#floor)"/>
+  
+  <!-- Workshop Elements -->
+  <!-- Vehicle silhouette -->
+  <rect x="200" y="250" width="400" height="120" rx="10" fill="#424242" opacity="0.8"/>
+  <rect x="220" y="270" width="360" height="80" rx="5" fill="#616161"/>
+  
+  <!-- Service bay elements -->
+  <rect x="50" y="100" width="150" height="200" fill="#78909C" opacity="0.6"/>
+  <rect x="600" y="100" width="150" height="200" fill="#78909C" opacity="0.6"/>
+  
+  <!-- Text overlay -->
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#003D82" text-anchor="middle">Professional Auto Service</text>
+  <text x="400" y="480" font-family="Arial, sans-serif" font-size="16" fill="#555555" text-anchor="middle">Quality Parts & Expert Service</text>
+</svg>

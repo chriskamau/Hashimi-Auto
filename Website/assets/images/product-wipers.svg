@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <rect width="300" height="300" fill="#FFFFFF"/>
+  <rect x="80" y="120" width="140" height="12" rx="6" fill="#757575"/>
+  <rect x="85" y="115" width="130" height="4" fill="#FF6B35"/>
+  <rect x="80" y="160" width="140" height="12" rx="6" fill="#757575"/>
+  <rect x="85" y="155" width="130" height="4" fill="#FF6B35"/>
+  <text x="150" y="250" font-family="Arial" font-size="12" fill="#003D82" text-anchor="middle" font-weight="600">Wiper Blades</text>
+</svg>

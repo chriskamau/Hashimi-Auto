@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | hashimi Auto Solutions</title>
+    <meta
+      name="description"
+      content="Contact hashimi Auto Solutions for auto parts, tyres and vehicle services in Kenya. Call, email or visit our workshop."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  </head>
+  <body data-theme="light">
+    <header class="site-header">
+      <div class="top-bar">
+        <span id="top-contact-phone"></span>
+        <span id="top-contact-hours"></span>
+      </div>
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/images/hashimi-logo.png" alt="hashimi logo" />
+          <div class="logo-text">
+            <span class="brand-name">Hashimi Auto Solutions</span>
+            <span class="brand-tagline">Powered by Life</span>
+          </div>
+        </a>
+        <nav class="main-nav" id="main-nav">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="btn-secondary small">Dark Mode</button>
+          <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h1>Get in Touch</h1>
+        <p>
+          Reach out for parts availability, service bookings or general automotive advice. Our team will get back to you
+          promptly during working hours.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="form-grid">
+          <div>
+            <h2>Send Us a Message</h2>
+            <!-- 
+              To enable email notifications, replace the action URL with your Formspree / EmailJS / backend endpoint.
+              Example (Formspree): action="https://formspree.io/f/your-form-id"
+            -->
+            <form
+              id="contact-form"
+              action="#"
+              method="POST"
+              autocomplete="on"
+              style="margin-top: 1rem"
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" />
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Send Message</button>
+              <p class="admin-hint">
+                Tip: configure email handling for this form as described in the README (Formspree or your own backend).
+              </p>
+              <p id="contact-form-status" class="admin-hint"></p>
+            </form>
+          </div>
+
+          <div>
+            <h2>Visit & Contact Details</h2>
+            <div id="contact-details" style="margin-bottom: 1rem"></div>
+
+            <h3>Business Hours</h3>
+            <ul id="contact-hours"></ul>
+
+            <h3 style="margin-top: 1.5rem">Location</h3>
+            <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-soft); margin-top: 0.5rem">
+              <iframe
+                id="contact-map"
+                src=""
+                width="100%"
+                height="260"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <p style="margin-top: 0.75rem; font-size: 0.9rem;">
+              <a href="https://www.google.com/maps?q=Kingdom+Bank+Kirinyanga+Road+Nairobi+Kenya" target="_blank" rel="noopener" style="color: var(--color-secondary); text-decoration: none;">
+                📍 View on Google Maps
+              </a>
+            </p>
+
+            <h3 id="booking" style="margin-top: 1.5rem">Book a Service</h3>
+            <p class="admin-hint">
+              For tyre fitting, maintenance or diagnostics, mention your preferred date and time in the message and we
+              will confirm availability.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div>
+          <h4>hashimi Auto Solutions</h4>
+          <p id="footer-tagline"></p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p id="footer-address"></p>
+          <p id="footer-phone"></p>
+          <p id="footer-email"></p>
+        </div>
+        <div>
+          <h4>Business Hours</h4>
+          <ul id="footer-hours"></ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="social-links" id="footer-social-links"></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span id="footer-copy"></span>
+        <a href="admin.html" class="admin-link">Admin</a>
+      </div>
+    </footer>
+
+    <a
+      href="#"
+      id="whatsapp-button"
+      class="whatsapp-button"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+    >
+      WhatsApp
+    </a>
+
+    <script src="assets/js/content-loader.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        window.HashimiSite.loadContactPageContent().then(function () {
+          // Pre-fill message if redirected from a product "Request Quote" button
+          const params = new URLSearchParams(window.location.search);
+          const product = params.get("product");
+          if (product) {
+            const msg = document.getElementById("message");
+            const subject = document.getElementById("subject");
+            if (subject && !subject.value) subject.value = "Product quote request";
+            if (msg && !msg.value) {
+              msg.value =
+                "Hello hashimi Auto Solutions, I would like a quote and availability information for: " +
+                product +
+                ".";
+            }
+          }
+        });
+
+        const form = document.getElementById("contact-form");
+        const status = document.getElementById("contact-form-status");
+        form.addEventListener("submit", function (e) {
+          // For static hosting, just show a friendly message.
+          // Replace this block if you hook the form to a real endpoint.
+          e.preventDefault();
+          status.textContent =
+            "Thank you for your message. We will respond as soon as possible during working hours.";
+          form.reset();
+        });
+      });
+    </script>
+  </body>
+</html>
+

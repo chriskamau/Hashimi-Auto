@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Emergency Service Placeholder -->
+  <rect width="400" height="300" fill="#F5F5F5"/>
+  
+  <!-- Emergency elements -->
+  <!-- Warning triangle -->
+  <path d="M 200 80 L 250 200 L 150 200 Z" fill="#FF6B35" stroke="#FF5722" stroke-width="3"/>
+  <text x="200" y="160" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#FFFFFF" text-anchor="middle">!</text>
+  
+  <!-- Roadside elements -->
+  <rect x="100" y="220" width="200" height="8" fill="#424242"/>
+  <circle cx="150" cy="224" r="15" fill="#212121"/>
+  <circle cx="250" cy="224" r="15" fill="#212121"/>
+  
+  <!-- Text -->
+  <text x="200" y="270" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#003D82" text-anchor="middle">Emergency Roadside Assistance</text>
+</svg>

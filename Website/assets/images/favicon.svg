@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Favicon: Simplified logo icon (just the abstract shapes) -->
+  <!-- Blue shape -->
+  <path d="M 6 8 Q 8 4, 10 6 Q 12 8, 10 12 Q 8 16, 10 20 Q 12 22, 14 20 Q 16 18, 14 14 Q 12 10, 14 8 Q 16 6, 18 8" 
+        fill="#003D82" stroke="none"/>
+  
+  <!-- Orange shape (intertwined) -->
+  <path d="M 18 8 Q 20 6, 22 10 Q 24 14, 22 18 Q 20 22, 24 24 Q 28 26, 26 28 Q 24 30, 20 28 Q 16 26, 18 22 Q 20 18, 16 16 Q 12 14, 14 10 Q 16 6, 18 8" 
+        fill="#FF6B35" stroke="none"/>
+</svg>
